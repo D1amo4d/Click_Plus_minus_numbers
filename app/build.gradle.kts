@@ -5,7 +5,9 @@ plugins {
 
 android {
     namespace = "com.example.clickplusminusnumbers"
-    compileSdk = 33
+    compileSdk = 34
+
+
 
     defaultConfig {
         applicationId = "com.example.clickplusminusnumbers"

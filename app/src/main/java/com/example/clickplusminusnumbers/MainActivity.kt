@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 bundle.putString(TV_NUMBER_KEY, age.toString())
                 val numbetFragment = NumderFragment()
                 numbetFragment.arguments = bundle
-                val intent = Intent(this, numbetFragment::class.java)
+                val intent = Intent(this, NumderFragment::class.java)
                 startActivity(intent)
             } else {
 

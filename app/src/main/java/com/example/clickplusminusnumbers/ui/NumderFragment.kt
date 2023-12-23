@@ -16,14 +16,17 @@ class NumderFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_numder, container, false)
+        val view = inflater.inflate(R.layout.fragment_numder, container, false)
         val tvNum = tvNumbers.findViewById<TextView>(R.id.tv_number)
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bundle = Bundle()
-        val getTvNumber = bundle.getString(TV_NUMBER_KEY)
+
+        val bundle = arguments
+        val getTvNumber = bundle?.getString(TV_NUMBER_KEY)
         tvNumbers.text = getTvNumber
     }
 }
